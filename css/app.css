@@ -1,0 +1,105 @@
+.modal { font-family:Arial,Helvetica,sans-serif!important}
+.modal p {font-family:"Helvetica Neue",Helvetica,Arial,sans-serif !important; color:#000 !important; font-size:14px;}
+.modal-dialog {
+  width: 750px;
+}
+.modal-body { 
+  padding: 0px;
+  height: 410px;
+}
+.row{
+  margin-right: 0px;
+  margin-left: 0px;
+  height: 100%;
+}
+html, body {
+  height: 100%;
+  
+}
+
+.container {
+  height: 100%;
+  text-align: center;
+}
+
+.logo{
+  width: 100px;
+}
+
+.left-panel{
+  padding: 60px 20px 20px 20px;
+}
+.right-panel{
+  padding: 60px 20px 20px 20px;
+  background-image: linear-gradient(103deg,#d0f6f6,#d7f6d8);
+  height: 100%;
+}
+
+
+.coupon-container .store-logo{
+  height: 80px;
+}
+
+.coupon-container .description p{
+  font-size: 16px;
+}
+
+.form-control {
+  display: inline-block;
+  vertical-align: middle;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #555;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+
+}
+
+.icon-copy{
+  width: 24px;
+  padding: 5px;
+}
+
+.input-code{
+  width: 60%;
+}
+.copy-button{
+  width: calc(40% - 5px);
+}
+
+.icon-subscription{
+  width: 80px;
+}
+.subscription-container{
+  text-align: center;
+}
+
+
+.form-text{
+  font-size: 16px;
+}
+
+.input-email{
+  margin-top:20px;
+  width: 90%;
+}
+
+.subscribe-button{
+  width: 70%;
+  margin-top: 20px;
+}
+
+#error-message{
+  color: #ff3b3b;
+  font-size: 12px;
+  display: none;
+}
+
+.alert{
+  margin-top: 20px
+}

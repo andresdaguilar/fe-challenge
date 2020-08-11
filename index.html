@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+  <body>
+    <div class="container text-center">
+      <button class="btn btn-info" id="click-me" style="top: 50%; position:absolute">Click me !</button>
+    </div>
+    <!--- Modal -->
+    <div class="modal fade " id="coupon-info" tabindex="-1" role="dialog"  aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <img src="images/logo.svg" class="logo"/>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <!-- Left Panel -->
+              <div class="col-md-6 left-panel">
+                <div class="coupon-container">
+                  <div class="row title">
+                    <div class="col-md-4">
+                      <img src="" id="store-logo" class="store-logo">
+                    </div>
+                    <div class="col-md-8">
+                      <h3 id="coupon-title"></h3>
+                    </div>
+                  </div>
+
+                  <div class="description">
+                    <p id="coupon-description"></p>
+                  </div>
+
+                  <div class="coupon-code">
+                    <input type="text" class="form-control input-code"  readonly="readonly" id="code"/>
+                    <button id="copy-button" class="btn btn-primary copy-button"><span id="copy-button-text">Copy</span> <img id="icon-copy" class="icon-copy" src="icons/copy.svg"/></button>
+                  </div>
+
+                </div>
+              </div>
+              <!-- Right panel -->
+              <div class="col-md-6 right-panel" >
+                <div class="subscription-container">
+                  <img src="icons/mail.svg" class="icon-subscription"/>
+                  <h3>Stay ahead</h3>
+
+                  <div class="subscription-form">
+                    <span class="form-text">Get new deals delivered to your inbox</span>      
+                    <div id="form-block">
+                      <input type="text" class="form-control input-email" placeholder="Enter your email address" id="email"/>
+                      <span id="error-message">Please provide a valid email address</span>
+                      <button class="btn btn-danger subscribe-button" id="subscribe-button">Subscribe</button>
+                    </div>              
+                  </div>
+                  <div class="alert alert-danger" style="display: none" id="alert" role="alert"><span id="response-error-message"></span></div>
+                  <div class="alert alert-success" style="display: none" id="success" role="alert">Subscription done!</div>
+                  
+                </div>  
+                
+              </div>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </div>
+
+    <!-- end Modal -->
+  </body>
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>    
+
+<script type="text/javascript" src="js/app.js"></script>
+  
