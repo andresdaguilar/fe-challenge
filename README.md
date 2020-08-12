@@ -11,7 +11,7 @@ Installing
     node index.js
 
 ## Start front by running http-server or similar to launch site:
-   http-server
+    http-server
 
 
 The backend will receive the requests and generate random responses (success, error, warning about existing email)
